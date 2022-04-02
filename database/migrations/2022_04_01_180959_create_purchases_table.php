@@ -14,7 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('purchases', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->integer('material_id')->unsigned();
+            $table->integer('quantity')->unsigned();
+            $table->integer('supplier_id')->unsigned();
+            $table->boolean('status')->default(0);
             $table->timestamps();
         });
     }
