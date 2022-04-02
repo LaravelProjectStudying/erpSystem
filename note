@@ -1,0 +1,6 @@
+** if mix is not running 
+npm i vue-loader
+npm update vue-loader
+
+** then run this command 
+npm install && npm run dev
